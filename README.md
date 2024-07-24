@@ -1,2 +1,2 @@
 # RIEM
-RIEM for heterogeneous change detection
+RIEM for heterogeneous change detection.
