@@ -2,7 +2,7 @@
 
 RIEM for Heterogeneous Change Detection. 
 
-## Datasets and Energy minimization algorithms
+## Datasets
 
 #2-TexasALI、#8-TexasL8 are download from Professor Michele Volpi's webpage at https://zenodo.org/records/8046719.
 
