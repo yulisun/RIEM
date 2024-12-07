@@ -8,7 +8,7 @@ RIEM for Heterogeneous Change Detection.
 
 #3-Img7、#4-Img17、#7-Img5 are download from Professor Max Mignotte's webpage (http://www-labs.iro.umontreal.ca/~mignotte/) and they are associated with this paper https://doi.org/10.1109/TGRS.2020.2986239.
 
-#5-California is download from Dr. Luigi Tommaso Luppino's webpage (https://sites.google.com/view/luppino/data) and it was downsampled to 875*500 as shown in our paper.
+#5-California is download from Dr. Luigi Tommaso Luppino's webpage (https://sites.google.com/view/luppino/data).
 
 LSA energy minimization algorithm is download from https://vision.cs.uwaterloo.ca/code/.
 
