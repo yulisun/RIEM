@@ -7,7 +7,7 @@ warning('off')
 % #1-Italy #2-TexasALI #3-Img7 #4-Img17 #5-California #5-California-sampled
 % #6-YellowRiver #7-Img5 #8-TexasL8 #9-Shuguang
 
-dataset = '#1-Italy'; % or others
+dataset = '#1-Italy'; % or others, e.g., #6-YellowRiver, #9-Shuguang...
 Load_dataset % For other datasets, we recommend a similar pre-processing as in "Load_dataset"
 fprintf(['\n Data loading is completed...... ' '\n'])
 
