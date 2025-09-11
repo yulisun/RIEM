@@ -3,6 +3,7 @@ close all
 addpath(genpath(pwd))
 warning('off')
 %% load dataset
+
 % dataset#1 to #9, where dataset#1-#7 are used in the paper.
 % #1-Italy #2-TexasALI #3-Img7 #4-Img17 #5-California #5-California-sampled
 % #6-YellowRiver #7-Img5 #8-TexasL8 #9-Shuguang
@@ -10,6 +11,7 @@ warning('off')
 dataset = '#1-Italy'; % or others
 Load_dataset % For other datasets, we recommend a similar pre-processing as in "Load_dataset"
 fprintf(['\n Data loading is completed...... ' '\n'])
+
 %% Parameter setting
 par.solve = 'RIEM-L'; % 'RIEM-L' or 'RIEM-O' ; different methods of RIEM
 par.dataset = dataset;
@@ -17,6 +19,7 @@ par.Ns = 2500;
 par.alpha = 15;
 par.beta = 1;
 par
+
 %% RIEM
 t_o = clock;
 fprintf(['\n RIME is running...... ' '\n'])
@@ -27,6 +30,7 @@ elseif strcmp(par.solve,'RIEM-L') == 1
 end
 fprintf('\n');fprintf('The total computational time of %s is %.3f s\n', par.solve, etime(clock, t_o));
 fprintf(['\n' '====================================================================== ' '\n'])
+
 %% Displaying results
 fprintf(['\n Displaying the results...... ' '\n'])
 figure;
