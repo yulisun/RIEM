@@ -22,7 +22,7 @@ If you use these resources, please cite their relevant papers.
 
 If you use this code for your research, please cite our paper. Thank you!
 
-@article{SUN202509,
+@article{SUN202509,  
 title = {Detecting Changes without Comparing Images: Rules Induced Change Detection in Heterogeneous Remote Sensing Images},  
 journal = {ISPRS Journal of Photogrammetry and Remote Sensing},  
 volume = {},  
