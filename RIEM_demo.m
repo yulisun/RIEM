@@ -13,7 +13,7 @@ Load_dataset % For other datasets, we recommend a similar pre-processing as in "
 fprintf(['\n Data loading is completed...... ' '\n'])
 
 %% Parameter setting
-par.solve = 'RIEM-L'; % 'RIEM-L' or 'RIEM-O' ; different methods of RIEM
+par.solve = 'RIEM-O'; % 'RIEM-O' or 'RIEM-L' ; different methods of RIEM
 par.dataset = dataset;
 par.Ns = 2500;
 par.alpha = 15;
@@ -46,3 +46,4 @@ end
 F1 = 2*tp/(2*tp+fp+fn);
 result = '%s: OA is %4.3f; Kc is %4.3f; F1 is %4.3f \n';
 fprintf(result,par.solve,OA,kappa,F1)
+
