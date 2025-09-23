@@ -22,14 +22,14 @@ If you use these resources, please cite their relevant papers.
 
 If you use this code for your research, please cite our paper. Thank you!
 
-@article{SUN202509,  
+@article{SUN2025241,  
 title = {Detecting Changes without Comparing Images: Rules Induced Change Detection in Heterogeneous Remote Sensing Images},  
 journal = {ISPRS Journal of Photogrammetry and Remote Sensing},  
-volume = {},  
+volume = {230},  
 pages = {},  
 year = {2025},  
 issn = {0924-2716},  
-doi = {Coming soon},  
+doi = {https://doi.org/10.1016/j.isprsjprs.2025.09.009},  
 author = {Yuli Sun and Lin Lei and Zhang Li and Gangyao Kuang and Qifeng Yu}
 }
 
