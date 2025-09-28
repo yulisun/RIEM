@@ -48,13 +48,7 @@ final_edgeWeights(idx_selfloop,:) =[];
 %%
 addpath('LSA_TR_v2.03');addpath('LSA_TR_v2.03\bk_matlab')
 [energy.UE, energy.subPE, energy.superPE, energy.constTerm] = reparamEnergy(Esp_termWeights', final_edgeWeights);
-if size(image_t1,1) == 300 && size(image_t1,2) == 412
-    [labels_LSA, ~, ~] = LSA_TR(energy);
-elseif size(image_t1,1) == 827 && size(image_t1,2) == 465
-    [labels_LSA, ~, ~] = LSA_TR(energy);
-else
-    [labels_LSA, ~, ~] = LSA_TR(energy,[],initLabeling,[]);
-end
+[labels_LSA, ~, ~] = LSA_TR(energy,[],initLabeling,[]);
 if labels_LSA == 1
     [labels_LSA, ~, ~] = LSA_TR(energy);
 end
@@ -64,3 +58,4 @@ for i = 1:size(t1_feature,2)
     bi_map(index_vector) = 2-labels_LSA(i);
 end
 CM = reshape(bi_map,[size(Cosup,1) size(Cosup,2)]);
+
