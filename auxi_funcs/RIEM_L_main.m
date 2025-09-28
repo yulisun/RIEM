@@ -52,10 +52,14 @@ addpath('LSA_TR_v2.03');addpath('LSA_TR_v2.03\bk_matlab')
 if labels_LSA == 1
     [labels_LSA, ~, ~] = LSA_TR(energy);
 end
+if labels_LSA == 1
+   error('Error: LSA_TR numerical solution is unstable! It is recommended to run the code in Matlab2016a or use the RIEM-O algorithm!');
+end
 idx_co = label2idx(Cosup);
 for i = 1:size(t1_feature,2)
     index_vector = idx_co{i};
     bi_map(index_vector) = 2-labels_LSA(i);
 end
 CM = reshape(bi_map,[size(Cosup,1) size(Cosup,2)]);
+
 
